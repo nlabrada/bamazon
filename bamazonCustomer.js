@@ -51,7 +51,7 @@ inquirer.prompt([
     var invalid = /[a-z]/gi;
     if (err) throw err;
     if (res === invalid || res.length ===0) {
-      console.log("dang, enter a number nextime");
+      console.log("dang, enter a number next time");
       connection.end();
     } else {
       buyThatThing(res[0], checking.askQuantity);
